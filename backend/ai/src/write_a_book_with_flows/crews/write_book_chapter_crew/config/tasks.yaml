@@ -1,0 +1,58 @@
+research_section:
+  description: >
+    Research the provided demand letter section topic and outline to gather relevant legal information,
+    statutes, case law, and regulations that will strengthen this section of the demand letter.
+    Ensure you focus on authoritative legal sources and proper citation formats according to US judiciary standards.
+
+    Here is some additional information about the client's desired goal for the demand letter:\n\n {goal}
+    Here is the outline description for this section:\n\n {section_description}
+
+    Use the following employer and employee information to make your research highly specific and relevant:
+
+    Employer Information: {employer_info}
+    Employee Information: {employee_info}
+    Incident Information: {incidents_info}
+
+    When researching, consider the following key points:
+    - Identify specific labor laws and workplace safety regulations relevant to this case
+    - Find precedent cases that support the client's position
+    - Research proper legal citation formats (Blue Book) for all referenced materials
+    - Focus on the most relevant and persuasive legal authorities
+
+    Here is the outline of the entire demand letter:\n\n
+    {letter_outline}
+  expected_output: >
+    A set of legal references, citations, and supporting information that can be used in writing this 
+    section of the demand letter, including proper legal citations.
+  agent: researcher
+
+write_section:
+  description: >
+    Write a professionally formatted section of a demand letter based on the provided legal research, 
+    section title, and outline description. Each section should follow formal legal writing conventions
+    with proper citations according to US judiciary standards.
+
+    Here is the topic for the demand letter: {topic}
+    Here is the title of this section: {section_title}
+    Here is the outline description for this section:\n\n {section_description}
+
+    Use the following employer and employee information to personalize this section with specific details:
+
+    Employer Information: {employer_info}
+    Employee Information: {employee_info}
+    Incident Information: {incidents_info}
+
+    Important notes:
+    - Use formal legal writing style appropriate for a demand letter
+    - Include proper legal citations for all referenced laws and cases
+    - Maintain a professional, assertive tone throughout
+    - Ensure logical flow within this section and connection to the overall demand letter
+    - Include specific details from the employer/employee/incident information to make the letter concrete and impactful
+    - When writing the letter, use actual names, dates, and specific incidents from the provided information
+
+    Here is the outline of the entire demand letter:\n\n
+    {letter_outline}
+  expected_output: >
+    A professionally formatted section of a demand letter with proper legal citations, clear arguments,
+    and persuasive language appropriate for legal correspondence.
+  agent: writer

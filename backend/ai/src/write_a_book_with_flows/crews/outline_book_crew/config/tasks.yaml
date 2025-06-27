@@ -1,0 +1,49 @@
+research_topic:
+  description: >
+    Research the provided topic of {topic} to gather the most important information that will 
+    be useful in creating a demand letter outline. This demand letter will be written by a third-party 
+    attorney representing an employee against their employer. Ensure you focus on high-quality, 
+    reliable legal sources that can strengthen the attorney's position.
+
+    Here is some additional information about the client's desired goal for the demand letter:\n\n {goal}
+
+    Use the following employer and employee information to make your research more specific and relevant:
+
+    Employer Information: {employer_info}
+    Employee Information: {employee_info}
+    Incident Information: {incidents_info}
+
+    Focus on researching relevant labor laws, workplace safety regulations, and wage-and-hour laws
+    that are applicable to the specific incidents described. Pay special attention to precedent cases 
+    where attorneys have successfully represented employees in similar situations.
+  expected_output: >
+    A set of key points and important information about {topic} that will be used to create the outline,
+    with emphasis on applicable laws and legal precedents that would be cited by a third-party attorney.
+  agent: researcher
+
+generate_outline:
+  description: >
+    Create a comprehensive demand letter outline with sections in sequential order based on the research findings. 
+    This demand letter will be written by a third-party attorney representing an employee against their employer.
+    Ensure that each section has a title and a brief description that highlights the content to be covered.
+
+    A professional attorney demand letter should typically include these sections (but you can modify as needed):
+    1. Introduction/Purpose Statement (including attorney representation disclosure)
+    2. Factual Background
+    3. Legal Violations
+    4. Demands for Relief
+    5. Closing Statements with Legal Consequences
+    6. Attorney Signature and Law Firm Information
+
+    Here is some additional information about the client's desired goal for the demand letter:\n\n {goal}
+
+    Use the following employer and employee information to make your outline specific and personalized:
+
+    Employer Information: {employer_info}
+    Employee Information: {employee_info}
+    Incident Information: {incidents_info}
+
+  expected_output: >
+    An outline of attorney demand letter sections, with titles and descriptions of what each section will contain,
+    written from the perspective of a third-party attorney representing the employee.
+  agent: outliner
